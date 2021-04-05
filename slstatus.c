@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>
 #include <time.h>
 #include <X11/Xlib.h>
 
@@ -70,6 +71,7 @@ main(int argc, char *argv[])
 		usage();
 	}
 
+    setlocale(LC_ALL, "");
 	memset(&act, 0, sizeof(act));
 	act.sa_handler = terminate;
 	sigaction(SIGINT,  &act, NULL);
@@ -139,3 +141,4 @@ main(int argc, char *argv[])
 
 	return 0;
 }
+
