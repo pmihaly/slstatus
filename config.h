@@ -75,7 +75,7 @@ static const struct arg args[] = {
 
     { separator,        " ",             ""},
 	{ disk_perc,        "/: %s%% ",     "/" },
-    { separator,        " ",             ""},
+    { separator,        "",             ""},
 
     /* { separator,        " ",             ""}, */
 	/* { battery_perc,     " %s%% ",       "BAT0" }, */
