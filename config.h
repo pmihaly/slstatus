@@ -67,23 +67,23 @@ static const struct arg args[] = {
 	/* function         format          argument */
 
     { separator,        " ",             ""},
-	{ netspeed_rx,      "%s↓ ",         "wlo1" },
-	{ netspeed_tx,      "%s↑ ",         "wlo1" },
-	{ wifi_essid,       "%s ",         "wlo1" },
-	{ wifi_perc,        "%s%%",        "wlo1" },
+    { netspeed_rx,      "%s↓ ",          "wlo1" },
+	{ netspeed_tx,      "%s↑ ",          "wlo1" },
+	{ wifi_essid,       "%s ",           "wlo1" },
+	{ wifi_perc,        "%s%%",          "wlo1" },
     { separator,        " ",             ""},
 
     { separator,        " ",             ""},
-	{ disk_perc,        "/: %s%% ",     "/" },
-    { separator,        "",             ""},
+	{ disk_perc,        "/: %s%%",       "/" },
+    { separator,        " ",             ""},
 
     /* { separator,        " ",             ""}, */
-	/* { battery_perc,     " %s%% ",       "BAT0" }, */
-	/* { battery_state,    "(%s) ",        "BAT0" }, */
+	/* { battery_perc,     "%s%%",          "BAT0" }, */
+	/* { battery_state,    "(%s)",          "BAT0" }, */
     /* { separator,        " ",             ""}, */
 
     { separator,        " ",             ""},
-	{ datetime,         "%s",           "%b %d. %a %H:%M" },
+	{ datetime,         "%s",            "%b %d. %a %H:%M" },
     { separator,        " ",             ""},
 };
 
